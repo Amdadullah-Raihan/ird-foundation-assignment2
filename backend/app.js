@@ -63,6 +63,19 @@ app.get("/chapter", (req, res) => {
     }
   });
 });
+// Route handler for retrieving all hadith
+app.get("/hadith", (req, res) => {
+  // Query to get all books
+  db.all("SELECT * FROM hadith", (err, rows) => {
+    if (err) {
+      console.error("Error querying database:", err.message);
+      res.status(500).json({ error: "Internal Server Error" });
+    } else {
+      // Send the list of books as JSON response
+      res.json({ hadith: rows });
+    }
+  });
+});
 
 app.listen(port, () => {
   console.log(`iHadis app listening on port ${port}`);
