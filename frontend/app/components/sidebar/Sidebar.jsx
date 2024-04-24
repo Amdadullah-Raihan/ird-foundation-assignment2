@@ -18,7 +18,7 @@ const Sidebar = () => {
   ];
 
   return (
-    <div className="flex flex-col justify-center items-center h-[90vh] px-5 gap-8">
+    <div className="flex flex-col justify-center items-center h-[90vh] px-5 gap-6">
       {links.map((link, index) => (
         <Link
           key={index}
