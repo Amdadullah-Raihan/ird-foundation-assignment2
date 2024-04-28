@@ -64,6 +64,7 @@ app.get("/chapter", (req, res) => {
     }
   });
 });
+
 // Route handler for retrieving all hadith
 app.get("/hadith", (req, res) => {
   // Query to get all books
@@ -74,6 +75,20 @@ app.get("/hadith", (req, res) => {
     } else {
       // Send the list of books as JSON response
       res.json({ hadith: rows });
+    }
+  });
+});
+
+// Route handler for retrieving all hadith
+app.get("/section", (req, res) => {
+  // Query to get all books
+  db.all("SELECT * FROM section", (err, rows) => {
+    if (err) {
+      console.error("Error querying database:", err.message);
+      res.status(500).json({ error: "Internal Server Error" });
+    } else {
+      // Send the list of books as JSON response
+      res.json({ section: rows });
     }
   });
 });
