@@ -26,7 +26,7 @@ const Sidebar = () => {
           className={`${
             path === link.href ? "text-white primary-bg " : " text-gray-500"
           }   ${
-            path !== link.href ? "hover:text-green-600 hover:bg-blue-50" : " "
+            path !== link.href ? "hover:primary-color hover:bg-blue-50" : " "
           } p-2 rounded-md bg-white`}
         >
           <span className={`text-3xl `}>{link.icon}</span>

@@ -19,7 +19,7 @@ const Hadith = async ({ section_id }) => {
           <div>
             <div>
               <p className="text-xl text-right">{hadith.ar}</p>
-              <p className="my-4 text-sm text-green-600">
+              <p className="my-4 text-sm primary-color">
                 {hadith.narrator} থেকে বর্ণিত:
               </p>
 
@@ -28,7 +28,7 @@ const Hadith = async ({ section_id }) => {
             <div className="flex items-center justify-between">
               <p className="my-6 text-sm">
                 হাদিসের নাম:{" "}
-                <span className="p-2 text-white bg-green-600 rounded-md">
+                <span className="p-2 text-white rounded-md primary-bg">
                   {hadith.grade}
                 </span>
               </p>
