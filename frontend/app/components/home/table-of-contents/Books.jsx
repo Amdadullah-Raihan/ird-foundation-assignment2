@@ -3,7 +3,7 @@
 const Books = async () => {
   const response = await fetch("http://localhost:5000/books");
   const books = await response.json();
-  console.log(books);
+  // console.log(books);
 
   if (!books.books) return <div>Loading books...</div>;
 

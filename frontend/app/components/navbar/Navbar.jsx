@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <div className="flex items-center justify-between p-5">
       <div className="flex items-center gap-2 md:gap-5 lg:gap-6">
-        <Image src={logo} />
+        <Image src={logo} alt="iHadith" />
         <div className="hidden leading-5 md:block">
           <h6 className="font-bold">হাদিস সমূহ</h6>
           <small>হাদিস পড়ুন শিখুন এবং জানুন</small>

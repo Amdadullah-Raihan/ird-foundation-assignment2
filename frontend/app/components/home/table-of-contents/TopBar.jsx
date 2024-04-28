@@ -19,6 +19,7 @@ const TopBar = () => {
     <div className="grid h-10 grid-cols-2 border-b ">
       {links.map((link) => (
         <Link
+          key={link.url}
           className={`${path === link.url ? "primary-bg text-white" : ""} ${
             path === "/books" ? "rounded-tl-2xl" : " rounded-tr-2xl"
           } flex items-center justify-center `}
