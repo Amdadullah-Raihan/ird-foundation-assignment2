@@ -12,10 +12,10 @@ const BooksPage = () => {
           <Books />
         </TableContentsLayout>
       </div>
-      <div className="flex-grow ">
+      <div className="flex-2">
         <MainContents />
       </div>
-      <div className="hidden lg:block">
+      <div className="hidden  lg:block">
         <Settings />
       </div>
     </div>
