@@ -4,7 +4,7 @@ import { TbBookmark, TbCopy, TbExternalLink, TbShare } from "react-icons/tb";
 import { PiWarningOctagonLight } from "react-icons/pi";
 
 const Hadith = async ({ section_id }) => {
-  const response = await fetch("http://localhost:5000/hadith");
+  const response = await fetch("https://ihadis-server.vercel.app/hadith");
   const data = await response.json();
 
   const filteredHatidth = data.hadith.filter(

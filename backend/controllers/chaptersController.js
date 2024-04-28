@@ -8,7 +8,7 @@ const getAllChapters = (req, res) => {
       res.status(500).json({ error: "Internal Server Error" });
     } else {
       // Send the list of chapters as JSON response
-      res.json({ chapters: rows });
+      res.json({ chapter: rows });
     }
   });
 };

@@ -1,7 +1,7 @@
 // "use server";
 
 const Books = async () => {
-  const response = await fetch("http://localhost:5000/books");
+  const response = await fetch("https://ihadis-server.vercel.app/books");
   const books = await response.json();
   // console.log(books);
 

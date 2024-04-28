@@ -5,7 +5,7 @@ import { LiaAngleRightSolid } from "react-icons/lia";
 import Hadith from "./Hadith";
 
 const MainContents = async () => {
-  const response = await fetch("http://localhost:5000/section");
+  const response = await fetch("https://ihadis-server.vercel.app/section");
   const sections = await response.json();
   // console.log(sections.section);
 

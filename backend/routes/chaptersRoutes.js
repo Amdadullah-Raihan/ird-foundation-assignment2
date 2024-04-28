@@ -2,9 +2,9 @@
 
 const express = require("express");
 const router = express.Router();
-const booksController = require("../controllers/booksController");
+const chaptersController = require("../controllers/chaptersController");
 
-// Route handler for fetching all books
-router.get("/", booksController.getAllBooks);
+// Route handler for fetching all chapters
+router.get("/", chaptersController.getAllChapters);
 
 module.exports = router;
