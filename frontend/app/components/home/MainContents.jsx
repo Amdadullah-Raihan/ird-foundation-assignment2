@@ -10,7 +10,7 @@ const MainContents = async () => {
   // console.log(sections.section);
 
   return (
-    <div className="">
+    <div className="overflow-y-scroll scrollable-div max-h-[88vh]">
       <div>
         {/* First two div will be dynamic in the real app */}
         <div className="p-4 mb-6 bg-white rounded-2xl">
