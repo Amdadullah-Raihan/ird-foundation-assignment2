@@ -12,10 +12,10 @@ const Hadith = async ({ section_id }) => {
   );
 
   return (
-    <div>
-      <div className="p-4 mb-6 bg-white rounded-2xl">
+    <div className="">
+      <div className="mb-6 ">
         {filteredHatidth.map((hadith) => (
-          <div>
+          <div className="p-4 mb-6 bg-white rounded-2xl ">
             <div>
               <p className="text-xl text-right">{hadith.ar}</p>
               <p className="my-4 text-sm primary-color">
