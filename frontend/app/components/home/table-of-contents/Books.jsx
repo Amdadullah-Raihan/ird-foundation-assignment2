@@ -10,7 +10,16 @@ const Books = async () => {
   return (
     <div>
       {books.books.map((books) => (
-        <p key={books.id}>{books.title}</p>
+        <div
+          key={books.id}
+          className="flex items-center p-2 rounded-lg bg-green-50"
+        >
+          {" "}
+          <p className="flex items-center justify-center w-10 h-10 mr-4 text-white primary-bg rounded-xl">
+            B
+          </p>{" "}
+          {books.title}
+        </div>
       ))}
     </div>
   );

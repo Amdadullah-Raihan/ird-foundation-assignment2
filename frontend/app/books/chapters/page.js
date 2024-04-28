@@ -10,7 +10,7 @@ export const getChapters = async () => {};
 const Chapters = async () => {
   const response = await fetch("http://localhost:5000/chapter");
   const chapter = await response.json();
-  console.log(chapter);
+
   return (
     <div className="flex gap-6 bg-blue-50 ">
       <div>

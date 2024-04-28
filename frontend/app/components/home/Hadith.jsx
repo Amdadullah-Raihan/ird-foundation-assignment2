@@ -11,7 +11,6 @@ const Hadith = async ({ section_id }) => {
     (hadith) => hadith.section_id === section_id
   );
 
-  console.log(filteredHatidth);
   return (
     <div>
       <div className="p-4 mb-6 bg-white rounded-2xl">

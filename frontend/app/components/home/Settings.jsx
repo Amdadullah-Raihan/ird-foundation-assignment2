@@ -1,9 +1,10 @@
+"use client"; // to avoid hydration error on mobile views
 import React from "react";
 import SupportCard from "./SupportCard";
 
 const Settings = () => {
   return (
-    <div>
+    <div className="">
       <div className="flex-1 p-6 bg-white min-w-64 rounded-2xl text">
         <p className="text-center ">সেটিংস</p>
         <p className="mt-6 mb-2 text-xs ">আরবি ফন্ট সিলেক্ট করুন</p>
@@ -31,7 +32,10 @@ const Settings = () => {
           </div>
         </div>
       </div>
-      <SupportCard />
+      <div className="h-full p-4 md:p-0">
+        {" "}
+        <SupportCard />
+      </div>
     </div>
   );
 };
