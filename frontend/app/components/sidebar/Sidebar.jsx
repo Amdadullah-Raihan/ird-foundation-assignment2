@@ -8,10 +8,10 @@ import { RxDashboard } from "react-icons/rx";
 import { GrSend } from "react-icons/gr";
 
 const Sidebar = () => {
-  const path = "/bukhari";
+  const path = "/books";
   const links = [
     { href: "/", icon: <RxHome />, text: "Home" },
-    { href: "/bukhari", icon: <IoBookOutline />, text: "Books" },
+    { href: "/books", icon: <IoBookOutline />, text: "Books" },
     { href: "/", icon: <MdOutlineBookmarkBorder />, text: "Bookmarks" },
     { href: "/", icon: <RxDashboard />, text: "Dashboard" },
     { href: "/", icon: <GrSend />, text: "Find Hadith" },

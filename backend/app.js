@@ -5,6 +5,7 @@ const port = 5000;
 const sqlite3 = require("sqlite3").verbose();
 
 app.use(express.json());
+app.use(cors());
 
 // Connect to the SQLite database
 const db = new sqlite3.Database("./hadith_db.db", (err) => {

@@ -1,28 +1,32 @@
 "use client";
-
-import React, { useState } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import React from "react";
 
 const TopBar = () => {
-  const [isBookSelected, setIsBookSelected] = useState(true);
-
+  const path = usePathname();
+  const links = [
+    {
+      url: "/books",
+      lebel: "Books",
+    },
+    {
+      url: "/books/chapters",
+      lebel: "chapters",
+    },
+  ];
   return (
-    <div className="border-b grid grid-cols-2">
-      <button
-        className={`${
-          isBookSelected ? "primary-bg text-white" : ""
-        } rounded-tl-2xl p-4`}
-        onClick={() => setIsBookSelected(true)}
-      >
-        বই
-      </button>
-      <button
-        className={`${
-          !isBookSelected ? "primary-bg text-white" : ""
-        } rounded-tr-2xl p-4`}
-        onClick={() => setIsBookSelected(false)}
-      >
-        অধ্যায়
-      </button>
+    <div className="grid h-10 grid-cols-2 border-b ">
+      {links.map((link) => (
+        <Link
+          className={`${path === link.url ? "primary-bg text-white" : ""} ${
+            path === "/books" ? "rounded-tl-2xl" : " rounded-tr-2xl"
+          } flex items-center justify-center `}
+          href={link.url}
+        >
+          {link.lebel}
+        </Link>
+      ))}
     </div>
   );
 };

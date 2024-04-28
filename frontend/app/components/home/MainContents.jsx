@@ -1,7 +1,8 @@
 import React from "react";
+import Books from "./table-of-contents/Books";
 
 const MainContents = () => {
-  return <div className="bg-white rounded-xl p-6">Main Contents</div>;
+  return <div className="p-6 bg-white rounded-2xl">Main contents</div>;
 };
 
 export default MainContents;
