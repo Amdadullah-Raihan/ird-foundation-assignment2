@@ -13,7 +13,7 @@ const Chapters = async () => {
 
   return (
     <div className="flex gap-6 bg-blue-50">
-      <div className="w-1/4">
+      <div className="hidden w-1/4 md:block">
         <TableOfContentsLayout>
           <div>
             {chapter.chapter.map((cpt) => (
@@ -25,7 +25,7 @@ const Chapters = async () => {
       <div className="flex-grow">
         <MainContents />
       </div>
-      <div className="w-1/4">
+      <div className="hidden w-1/4 md:block">
         <Settings />
       </div>
     </div>

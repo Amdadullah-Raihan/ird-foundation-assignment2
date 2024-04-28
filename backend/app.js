@@ -38,7 +38,7 @@ app.get("/", (req, res) => {
 
 // Mount routes
 app.use("/books", booksRoutes);
-app.use("/chapters", chaptersRoutes); // Consider using plural form for consistency
+app.use("/chapter", chaptersRoutes); // Consider using plural form for consistency
 app.use("/hadith", hadithRoutes);
 app.use("/section", sectionRoutes);
 
