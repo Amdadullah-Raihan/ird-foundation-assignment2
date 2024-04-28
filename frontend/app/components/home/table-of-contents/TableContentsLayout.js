@@ -3,7 +3,7 @@ import TopBar from "./TopBar";
 import SearchFilter from "./SearchFilter";
 const TableContentsLayout = ({ children }) => {
   return (
-    <div className="bg-white rounded-2xl">
+    <div className="bg-white rounded-2xl min-w-64">
       <TopBar />
       <div className="p-4">
         <SearchFilter />
