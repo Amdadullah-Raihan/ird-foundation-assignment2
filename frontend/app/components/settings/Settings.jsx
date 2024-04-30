@@ -5,7 +5,7 @@ import SupportCard from "./SupportCard";
 const Settings = () => {
   return (
     <div className="">
-      <div className="p-6 bg-white rounded-lg min-w-64 text">
+      <div className="p-4 bg-white rounded-lg min-w-64 ">
         <p className="font-semibold md:text-center">সেটিংস</p>
         <p className="mt-6 mb-2 text-xs ">আরবি ফন্ট সিলেক্ট করুন</p>
         <select name="cars" id="cars" className="w-full p-2 border">

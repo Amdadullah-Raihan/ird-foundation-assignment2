@@ -3,7 +3,7 @@ import bg from "../../assests/masque.png";
 import Image from "next/image";
 const SupportCard = () => {
   return (
-    <div className="relative z-0 mt-6 text-white min-h-64 ">
+    <div className="relative z-0 mt-4 text-white min-h-64 ">
       <div className="absolute -right-4 -bottom-4 w-[50%] md:w-[60%] md:h-[60%] z-0">
         <Image src={bg} alt="bg" className="w-full h-rull" />
       </div>
