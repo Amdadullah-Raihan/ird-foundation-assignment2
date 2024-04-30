@@ -16,7 +16,7 @@ const SupportCard = () => {
           কাছে কবুল হবে।
         </p>
         <div className="text-center ">
-          <button className="px-4 py-2 text-sm bg-white rounded-lg primary-color ">
+          <button className="px-4 py-2 text-sm bg-white rounded-lg text-primary ">
             সাপোর্ট করুন
           </button>
         </div>

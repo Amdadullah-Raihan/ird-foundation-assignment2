@@ -7,7 +7,7 @@ import ChaptersTOC from "./ChaptersTOC";
 const TableOfContents = () => {
   const [isBookOpen, setIsBookOpen] = useState(true);
   return (
-    <div className="bg-white rounded-lg min-w-64">
+    <div className="h-full bg-white rounded-lg min-w-64">
       <div>
         <TopbarToc isBookOpen={isBookOpen} setIsBookOpen={setIsBookOpen} />
       </div>
