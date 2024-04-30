@@ -1,12 +1,11 @@
-import Link from "next/link";
+import React from "react";
 
-export default function App() {
+const Home = () => {
   return (
-    <main className="flex ">
-      <Link href="/books" className="text-blue-600 underline">
-        {" "}
-        Books{" "}
-      </Link>
-    </main>
+    <div className="w-full h-screen p-4 bg-gray-100 rounded-2xl">
+      iHadis Home Page
+    </div>
   );
-}
+};
+
+export default Home;
