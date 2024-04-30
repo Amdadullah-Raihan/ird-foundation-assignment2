@@ -36,7 +36,7 @@ const Sidebar = () => {
   ];
   const path = usePathname();
   return (
-    <aside className="flex w-full p-4 md:items-center justify-evenly md:flex-col md:gap-y-10">
+    <aside className="flex w-full p-4 bg-white md:items-center justify-evenly md:flex-col md:gap-y-10">
       {links.map((link) => (
         <Link
           key={link.lebel}

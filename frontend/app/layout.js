@@ -26,7 +26,9 @@ export default function RootLayout({ children }) {
           <aside className="items-center hidden md:flex">
             <Sidebar />
           </aside>
-          {children}
+          <div className="w-full h-screen p-3 bg-gray-200 lg:p-4 md:rounded-2xl">
+            {children}
+          </div>
         </main>
         <div className="fixed bottom-0 left-0 w-full border-t md:max-w-16 md:hidden">
           <Sidebar />

@@ -6,7 +6,7 @@ import logo from "../assests/logo/iHadis-logo.png";
 
 const Navbar = () => {
   return (
-    <nav className="flex items-center justify-between p-4">
+    <nav className="flex items-center justify-between p-4 bg-white">
       <div className="flex gap-4">
         <Image src={logo} alt="iHadis" className="w-10" />
         <div>
