@@ -11,11 +11,13 @@ const Books = () => {
       <div className="hidden md:block">
         <TableOfContents />
       </div>
-      <div className="flex flex-col gap-3 lg:gap-4 ">
+      <div className="flex flex-col gap-3">
         <FilterBooksBtn />
-        <ChapterName />
-        <Sections />
-        <div className="py-8"></div>
+        <div className="flex flex-col max-h-[87vh] gap-3 overflow-y-scroll scrollable-div lg:gap-4 z">
+          <ChapterName />
+          <Sections />
+          <div className="py-8"></div>
+        </div>
       </div>
       <div className="hidden md:block">
         <Settings />

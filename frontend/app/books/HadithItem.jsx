@@ -4,7 +4,6 @@ import { TbBookmark, TbCopy, TbExternalLink, TbShare } from "react-icons/tb";
 import { PiWarningOctagonLight } from "react-icons/pi";
 
 const Hadith = ({ hadith }) => {
-  console.log(hadith);
   return (
     <div className="flex flex-col w-full gap-4 p-3 bg-white rounded-lg">
       <div className="flex items-center gap-2 font-medium text-primary ">

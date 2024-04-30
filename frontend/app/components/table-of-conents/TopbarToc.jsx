@@ -3,10 +3,10 @@ import React from "react";
 
 const TopbarToc = ({ isBookOpen, setIsBookOpen }) => {
   return (
-    <div className="flex items-center justify-between border-b ">
+    <div className="flex items-center justify-between border-t border-b md:border-t-0">
       <button
         className={`${
-          isBookOpen ? "text-white bg-primary rounded-tl-lg" : ""
+          isBookOpen ? "text-white bg-primary md:rounded-tl-lg" : ""
         } w-full py-2 text-center `}
         onClick={() => {
           setIsBookOpen(true);
@@ -16,7 +16,7 @@ const TopbarToc = ({ isBookOpen, setIsBookOpen }) => {
       </button>
       <button
         className={`${
-          !isBookOpen ? "text-white bg-primary rounded-tr-lg" : ""
+          !isBookOpen ? "text-white bg-primary md:rounded-tr-lg" : ""
         } w-full py-2 text-center `}
         onClick={() => {
           setIsBookOpen(false);
