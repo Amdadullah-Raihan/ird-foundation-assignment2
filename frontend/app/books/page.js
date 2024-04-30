@@ -2,6 +2,7 @@ import React from "react";
 import FilterBooksBtn from "./FilterBooksBtn";
 import ChapterName from "./ChapterName";
 import Section from "./Section";
+import Hadith from "./Hadith";
 
 const Books = () => {
   return (
@@ -9,6 +10,8 @@ const Books = () => {
       <FilterBooksBtn />
       <ChapterName />
       <Section />
+      <Hadith />
+      <div className="py-8"></div>
     </div>
   );
 };
