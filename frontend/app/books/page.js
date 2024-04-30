@@ -4,6 +4,7 @@ import ChapterName from "./ChapterName";
 import Section from "./Section";
 import Hadith from "./Hadith";
 import TableOfContents from "../components/table-of-conents/TableOfContents";
+import Settings from "../components/settings/Settings";
 
 const Books = () => {
   return (
@@ -17,6 +18,9 @@ const Books = () => {
         <Section />
         <Hadith />
         <div className="py-8"></div>
+      </div>
+      <div>
+        <Settings />
       </div>
     </div>
   );

@@ -6,7 +6,7 @@ const TopbarToc = ({ isBookOpen, setIsBookOpen }) => {
     <div className="flex items-center justify-between border-b ">
       <button
         className={`${
-          isBookOpen ? "text-white bg-primary rounded-tl-xl" : ""
+          isBookOpen ? "text-white bg-primary rounded-tl-lg" : ""
         } w-full py-2 text-center `}
         onClick={() => {
           setIsBookOpen(true);
@@ -16,7 +16,7 @@ const TopbarToc = ({ isBookOpen, setIsBookOpen }) => {
       </button>
       <button
         className={`${
-          !isBookOpen ? "text-white bg-primary rounded-tr-xl" : ""
+          !isBookOpen ? "text-white bg-primary rounded-tr-lg" : ""
         } w-full py-2 text-center `}
         onClick={() => {
           setIsBookOpen(false);
