@@ -10,7 +10,7 @@ const SettingsBtn = () => {
   return (
     <div>
       <button
-        className="p-2 text-white rounded-lg bg-primary"
+        className="p-3 text-white rounded-lg bg-primary"
         onClick={() => setIsOpen(!isOpen)}
       >
         <FaGear />
