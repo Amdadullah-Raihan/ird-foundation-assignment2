@@ -17,8 +17,8 @@ const SettingsBtn = () => {
       </button>
       <div
         className={`${
-          isOpen ? "translate-x-0" : "translate-x-full"
-        } fixed top-0 left-0 w-full h-full bg-white md:hidden transition-all duration-500 ease-in-out`}
+          isOpen ? "translate-x-0" : "translate-x-full "
+        } fixed top-0 right-0  w-full h-full bg-white lg:hidden transition-all duration-500 ease-in-out z-20 md:max-w-96 md:drop-shadow-2xl`}
       >
         <button
           className="absolute text-2xl top-3 right-3"

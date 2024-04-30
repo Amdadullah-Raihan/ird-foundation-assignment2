@@ -7,7 +7,7 @@ const TopbarToc = ({ isBookOpen, setIsBookOpen }) => {
       <button
         className={`${
           isBookOpen ? "text-white bg-primary md:rounded-tl-lg" : ""
-        } w-full py-2 text-center `}
+        } w-full py-3 text-center `}
         onClick={() => {
           setIsBookOpen(true);
         }}
@@ -17,7 +17,7 @@ const TopbarToc = ({ isBookOpen, setIsBookOpen }) => {
       <button
         className={`${
           !isBookOpen ? "text-white bg-primary md:rounded-tr-lg" : ""
-        } w-full py-2 text-center `}
+        } w-full py-3 text-center `}
         onClick={() => {
           setIsBookOpen(false);
         }}

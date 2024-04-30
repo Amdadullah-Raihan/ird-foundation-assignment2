@@ -19,7 +19,7 @@ const Books = () => {
           <div className="py-8"></div>
         </div>
       </div>
-      <div className="hidden md:block">
+      <div className="hidden lg:block">
         <Settings />
       </div>
     </div>

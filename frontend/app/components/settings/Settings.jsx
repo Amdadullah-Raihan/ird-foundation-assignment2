@@ -32,7 +32,7 @@ const Settings = () => {
           </div>
         </div>
       </div>
-      <div className="h-full p-4 md:p-0">
+      <div className="h-full p-4 lg:p-0">
         {" "}
         <SupportCard />
       </div>
