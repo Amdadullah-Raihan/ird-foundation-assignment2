@@ -9,7 +9,7 @@ import Settings from "../components/settings/Settings";
 const Books = () => {
   return (
     <div className="flex gap-4">
-      <div>
+      <div className="hidden md:block">
         <TableOfContents />
       </div>
       <div className="flex flex-col gap-3 lg:gap-4">
@@ -19,7 +19,7 @@ const Books = () => {
         <Hadith />
         <div className="py-8"></div>
       </div>
-      <div>
+      <div className="hidden md:block">
         <Settings />
       </div>
     </div>

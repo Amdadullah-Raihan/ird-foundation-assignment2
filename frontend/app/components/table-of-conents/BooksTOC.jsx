@@ -1,7 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import BookItem from "./BookItem";
 
 const BooksTOC = () => {
-  return <div>Books TOC</div>;
+  const [books, setBooks] = useState([]);
+
+  useEffect(() => {
+    fetch("http://localhost:5000/books")
+      .then((res) => res.json())
+      .then((data) => {
+        setBooks(data.books);
+      });
+  }, []);
+
+  return (
+    <div>
+      {books.map((book) => (
+        <BookItem key={book.book_name} book={book} />
+      ))}
+    </div>
+  );
 };
 
 export default BooksTOC;

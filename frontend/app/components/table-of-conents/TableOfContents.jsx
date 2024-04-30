@@ -11,7 +11,7 @@ const TableOfContents = () => {
       <div>
         <TopbarToc isBookOpen={isBookOpen} setIsBookOpen={setIsBookOpen} />
       </div>
-      <div className="p-4">{isBookOpen ? <BooksTOC /> : <ChaptersTOC />}</div>
+      <div className="p-3">{isBookOpen ? <BooksTOC /> : <ChaptersTOC />}</div>
     </div>
   );
 };
