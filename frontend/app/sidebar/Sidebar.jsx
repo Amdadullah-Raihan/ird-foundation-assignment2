@@ -36,20 +36,22 @@ const Sidebar = () => {
   ];
   const path = usePathname();
   return (
-    <aside className="flex w-full p-4 bg-white md:items-center justify-evenly md:flex-col md:gap-y-10">
-      {links.map((link) => (
-        <Link
-          key={link.lebel}
-          href={link.href}
-          className={`${
-            path === link.href
-              ? " bg-primary text-white "
-              : "hover:text-primary hover:bg-gray-100"
-          } text-2xl md:text-3xl text-gray-500 p-2  rounded-lg`}
-        >
-          {link.icon}
-        </Link>
-      ))}
+    <aside className="bg-white dark:bg-[#202020] ">
+      <div className="flex w-full p-4 bg-white dark:bg-[#202020]   md:items-center justify-evenly md:flex-col md:gap-y-10">
+        {links.map((link) => (
+          <Link
+            key={link.lebel}
+            href={link.href}
+            className={`${
+              path === link.href
+                ? " bg-primary text-white "
+                : "hover:text-[#2B9E76] hover:bg-gray-100 dark:hover:bg-[#2C2C2C]"
+            } text-2xl md:text-3xl text-gray-500 p-2  rounded-lg`}
+          >
+            {link.icon}
+          </Link>
+        ))}
+      </div>
     </aside>
   );
 };

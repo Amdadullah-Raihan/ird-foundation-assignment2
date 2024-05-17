@@ -7,13 +7,13 @@ const Sections = () => {
   const [sections, setSections] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/section")
+    fetch("https://ihadis-server.vercel.app/section")
       .then((res) => res.json())
       .then((data) => setSections(data.section));
   }, []);
 
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col w-full gap-4">
       {sections.map((section) => (
         <div key={section.id}>
           <SectionItem section={section} />

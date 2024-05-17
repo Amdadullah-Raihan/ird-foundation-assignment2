@@ -6,8 +6,8 @@ const BookItem = ({ book }) => {
   return (
     <div>
       <button
-        className={`flex items-center w-full gap-4 p-3 rounded-lg hover:bg-green-100 ${
-          selected === book.id && "bg-green-100"
+        className={`flex items-center w-full gap-4 p-3 rounded-lg hover:bg-green-100 dark:bg-[#2C2C2C]   ${
+          selected === book.id && "bg-green-100  dark:bg-[#2C2C2C] "
         }`}
         onClick={() => setSelected(book.id)}
       >

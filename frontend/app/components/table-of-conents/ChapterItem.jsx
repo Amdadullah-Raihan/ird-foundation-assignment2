@@ -6,8 +6,8 @@ const ChapterItem = ({ chapter }) => {
   return (
     <div>
       <button
-        className={`flex items-center gap-4 w-full p-3 rounded-lg hover:bg-green-100 ${
-          selected === chapter.id && "bg-green-100"
+        className={`flex items-center gap-4 w-full p-3 rounded-lg hover:bg-green-100 dark:bg-[#2C2C2C]  ${
+          selected === chapter.id && "bg-green-100 dark:bg-[#2C2C2C] "
         }`}
       >
         <p className="flex items-center justify-center w-10 h-12 text-white hexagon bg-primary">

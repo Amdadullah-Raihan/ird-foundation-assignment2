@@ -5,7 +5,7 @@ const ChaptersTOC = () => {
   const [chapters, setChapters] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/chapter")
+    fetch("https://ihadis-server.vercel.app/chapter")
       .then((res) => res.json())
       .then((data) => {
         setChapters(data.chapter);

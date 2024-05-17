@@ -8,7 +8,7 @@ import SearchContents from "./SearchContents";
 const TableOfContents = () => {
   const [isBookOpen, setIsBookOpen] = useState(true);
   return (
-    <div className="h-full bg-white rounded-lg min-w-64">
+    <div className="h-full bg-white dark:bg-[#202020]   rounded-lg min-w-64 md:max-w-64">
       <div>
         <TopbarToc isBookOpen={isBookOpen} setIsBookOpen={setIsBookOpen} />
       </div>
